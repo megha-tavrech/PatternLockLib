@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    id("maven-publish")
 }
 
 android {
@@ -41,4 +42,28 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+}
+afterEvaluate {
+    publishing(){
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.megha-tavrech"
+                artifactId = "patternlocklibrary"
+                version = "1.0.3"
+                pom {
+                    description = "library"
+                }
+                repositories {
+                    maven {
+//                    val releasesRepoUrl = layout.buildDirectory.dir("repos/releases")
+//                    val snapshotsRepoUrl = layout.buildDirectory.dir("repos/snapshots")
+//                    url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
+                        // change to point to your repo, e.g. http://my.org/repo
+                        url = uri("https://github.com/megha-tavrech/PatternLockLib")
+                    }
+                }
+            }
+        }
+    }
+
 }

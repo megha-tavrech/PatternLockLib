@@ -3,6 +3,6 @@ jdk:
   - openjdk11
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
-install:
-  - FILE="-Dfile=patternlocklibrary-debug.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.megha-tavrech -DartifactId=PatternLockLib -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
+#install:
+#  - FILE="-Dfile=patternlocklibrary-debug.aar"
+#  - mvn install:install-file $FILE -DgroupId=com.github.megha-tavrech -DartifactId=PatternLockLib -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
