@@ -3,8 +3,20 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.megha-tavrech</groupId>
-    <artifactId>PatternLockLib</artifactId>
-    <version>1.0.0</version>
+    <artifactId>patternlocklibrary</artifactId>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
     <description>PatternLib</description>
+    <id>github</id>
+    <url>https://github.com/megha-tavrech/PatternLockLib</url>
+    <snapshots>
+        <enabled>true</enabled>
+    </snapshots>
+    <servers>
+        <server>
+            <id>github</id>
+            <username>megha-tavrech</username>
+            <password>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</password>
+        </server>
+    </servers>
 </project>

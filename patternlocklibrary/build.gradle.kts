@@ -49,7 +49,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.megha-tavrech"
                 artifactId = "patternlocklibrary"
-                version = "1.0.3"
+                version = "1.0.4"
                 pom {
                     description = "library"
                 }
