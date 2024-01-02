@@ -1,8 +1,8 @@
 # configuration file for building snapshots and releases with jitpack.io
 jdk:
   - openjdk11
-#before_install:
-#  - ./scripts/prepareJitpackEnvironment.sh
-#install:
-#  - FILE="-Dfile=FILE_NAME.aar"
-#  - mvn install:install-file $FILE -DgroupId=com.github.GIT_USER_NAME -DartifactId=GIT_REPO_NAME -Dversion=VERSION -Dpackaging=aar -DgeneratePom=true
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=PatternLockLib.aar"
+  - mvn install:install-file $FILE -DgroupId=com.github.megha-tavrech -DartifactId=PatternLockLib -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
