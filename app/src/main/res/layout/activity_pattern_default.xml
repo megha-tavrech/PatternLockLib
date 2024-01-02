@@ -2,15 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <com.itsxtt.patternlock.PatternLockView
+    <com.patternlocklibrary.PatternLockView
         android:id="@+id/defaultPatternLockView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="72dp"
-        android:layout_marginRight="72dp">
-    </com.itsxtt.patternlock.PatternLockView>
+        android:layout_marginRight="72dp"/>
 
 </LinearLayout>
